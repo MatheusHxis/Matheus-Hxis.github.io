@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+
+body{
+    margin: 0px;
+}
+header{
+    box-shadow: 1px 1px 30px black;
+    border-radius: 0px 0px 15px 15px;
+    background-color: white;
+}
+#inicio{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+header h1{
+    background-color: #008B8B;
+    color: white;
+    font-size: 30px;
+    width: 550px;   
+    padding: 11px 0px 11px 0px;
+    border-radius: 12px 150px 12px 150px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 30px black;
+    font-family: 'Noto Serif', serif;
+}
+#logo1{
+    position: absolute;
+        top: 20px; 
+        right: 25px;
+    height: 60px;
+}
+#logo2{
+    position: absolute;
+        top: 20px; 
+        left: 25px;
+    height: 60px;
+}
+#menu{
+    background-color: #008B8B;
+    color: black;
+    float: left;
+    position: relative;
+        top: 65px;
+        left: 250px;
+    width: 0px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+}
+li a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+.menu-autores{
+    position: absolute;
+        right: 50px;
+        bottom: 35px;
+
+}
+.menu-livros{
+    position: absolute;
+        left: 980px;
+        bottom: 35px;
+
+}
+#corpo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fundo-preto{
+    background-color: rgb(0, 0, 0, 0.9 );
+    width: 300px;
+    height: 515px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 80px 10px 80px 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px black;
+
+}
+#fundo-preto img{
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 1px solid blueviolet;
+    box-shadow: 1px 1px 10px black;
+
+}
+h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+p{
+    margin-top: 0px;
+    color: white;
+}
+footer{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    padding: 20px 50px 20px 50px;
+    margin-top: 25px;
+    box-shadow: 1px 1px 30px black;
+    border-radius: 15px 15px 0px 0px;
+    background-color: white;
+}

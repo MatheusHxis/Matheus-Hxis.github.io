@@ -42,6 +42,45 @@ header h1 {
 }
     /* FIM DA PARTE DA LOGO E NOME DO SITE */
 
+#menu{
+    color: black;
+    float: left;
+    position: relative;
+        top: 55px;
+        left: 250px;
+    width: 0px;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+}
+li a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+.menu-autores{
+    position: absolute;
+        right: 50px;
+        bottom: 20px;
+
+}
+/* .menu-livros{
+    position: absolute;
+        left: 980px;
+        bottom: 50px;
+
+} */
+
+
     /* INICIO DA PARTE DOS LIVROS DA SEMANA */
 #destaques-semana {
     display: flex;
@@ -169,7 +208,7 @@ section{
 footer{
     text-align: center;
     font-family: 'Noto Serif', serif;
-    padding: 50px 50px 20px 50px;
+    padding: 20px 50px 20px 50px;
     margin-top: 15px;
     box-shadow: 1px 1px 30px black;
     border-radius: 15px 15px 0px 0px;
