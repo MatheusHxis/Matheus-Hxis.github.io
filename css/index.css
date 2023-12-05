@@ -143,12 +143,12 @@ aside{
 }
 #corpo-de-dentro{
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    margin-right: 56px;
     position: relative;
         top: 30px;
-        left: 35px;
-        right: 35px;
 }
 .bloco-preto{
     background-color: rgb(0, 0, 0, 0.9 );
