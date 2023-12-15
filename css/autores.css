@@ -15,7 +15,7 @@ body.dark{
 }
 header{
     box-shadow: 1px 1px 30px black;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 50px 50px;
 }
 #inicio{
     display: flex;
@@ -129,6 +129,14 @@ footer{
     margin-top: 25px;
     box-shadow: 1px 1px 30px black;
     border-radius: 15px 15px 0px 0px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #008B8B;
+    border-radius: 30px;
 }
 
 /* dark-mode */
