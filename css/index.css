@@ -1,16 +1,27 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
 
+
 body {
-    margin: 0px;
+    background-color: #fafafa;
+    color: black;
+
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.2s linear;
+
+}
+body.dark{
+    background: #232c35;
+    color: white;
 }
 
     /* INICIO DA PARTE DA LOGO E NOME DO SITE */
 header{
     box-shadow: 1px 1px 30px black;
-    border-radius: 0px 0px 15px 15px;
-    background-color: white;
+    border-radius: 0px 0px 50px 50px;
 }
+
 
 #inicio{
     display: flex;
@@ -44,7 +55,6 @@ header h1 {
     /* FIM DA PARTE DA LOGO E NOME DO SITE */
 
 #menu{
-    color: black;
     float: left;
     position: relative;
         top: 55px;
@@ -63,10 +73,10 @@ li a{
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    color: black;
+    color: #008B8B;
 }
 a:hover{
-    color: blue;
+    color: #4682B4;
 }
 .menu-autores{
     position: absolute;
@@ -130,7 +140,6 @@ a:hover{
     
 }
 aside{
-    background-color: white;
     display: flex;
     justify-content: center;
     width: 92%;
@@ -232,6 +241,56 @@ footer{
     margin-top: 15px;
     box-shadow: 1px 1px 30px black;
     border-radius: 15px 15px 0px 0px;
-    background-color: white;
+}
+
+/* dark-mode */
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: absolute;
+        top: 40px;
+        right: 200px;
+    height: 18px;
+    width: 45px;
+
+    transform: scale(1.5);
+}
+
+.label .bola{
+    background-color: #4682B4;
+    border-radius: 50%;
+    position: absolute;
+        top: 2px;
+        left: 2px;
+
+    height: 24px;
+    width: 22px;
+    
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
 
 }
+
+.checkbox:checked + .label .bola {
+    transform: translateX(29px);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
+
